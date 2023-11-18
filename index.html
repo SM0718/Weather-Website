@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="left-div">
+        <input id="search-bar" type="search" name="" placeholder="  Kolkata">
+        <!-- <img id="search-icon" src="magnifying-glass.png" alt=""> -->
+    </input>
+        
+        <img id="weather-icon" src="cloudy.png" alt="">
+        <div class="weather-temp">
+            <h1 class="temp">27°C</h1>
+            <p class="weather">Partly Cloudy</p>
+        </div>
+        <hr>
+        <div class="date-time">
+            <p class="date">14 November 2023</p>
+            <p class="dateTime">Tuesday, 06:47 PM</p>
+            <p class="day-night">Night</p>
+        </div>
+        <h1 class="location">India</h1>
+    </div>
+
+    <div class="right-div">
+        <div class="wind-div">
+            <p class="info" id="wind">Wind</p>
+            <p class="weather-info">Speed</p>
+            <p class="wind-direction">Direction</p>
+        </div>
+        <div>
+            <p class="info" id="humidity">Humidity</p>
+            <p class="weather-info humidity">Speed</p>
+        </div>
+        <div>
+            <p class="info" id="feel">Real Feel</p>
+            <p class="weather-info real-feel">Speed</p>
+        </div>
+        <div>
+            <p class="info" id="uv">UV Index</p>
+            <p class="weather-info uv">Speed</p>
+            <p class="uv-info">Direction</p>
+        </div>
+        <div>
+            <p class="info" id="pressure">Pressure</p>
+            <p class="weather-info pressure">Speed</p>
+        </div>
+        <div>
+            <p class="info" id="rain">Condition</p>
+            <p class="weather-info rain-chance">Speed</p> 
+        </div>
+        <div>
+            <p class="info" id="temp">Carbon DiOxide</p>
+            <p class="weather-info temp-history">Speed</p>
+        </div>
+        <div>
+            <p class="info" id="sun">Visibility</p>
+            <p class="weather-info sun-rise"></p>
+        </div>
+        <div>
+            <p class="info" id="moon">Particulate Matter</p>
+            <p class="weather-info moon-rise">Rise: </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

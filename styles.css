@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+}
+body{
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    transition: 1s smooth;
+}
+
+@media screen and (min-width: 980px) {
+    .left-div{
+        height: 100vh;
+        width: 35%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Horizontal alignment */
+        align-items: center;
+        gap: 30px;
+        color: black;
+    }
+    
+    #search-bar{
+        height: 48px;
+        width: 80%;
+        background-color: #ededef;
+        border: 0;
+        border-radius: 50px;
+    }
+    
+    #search-bar::after{
+        content: url("magnifying-glass.png");
+        height: 24px;
+        width: 24px;
+    
+    }
+    
+    #search-icon{
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 45px;
+        left: 440px;
+    }
+    
+    #weather-icon{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .weather-temp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .temp{
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .weather{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    hr{
+        border: 1px solid #ededef;
+        width: 60%;
+    }
+    
+    .date-time{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Right Div */
+    
+    .right-div{
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 75px;
+        padding-left: 30px;
+        background-color: #efefef;
+    }
+    
+    .right-div > div{
+        height: 100px;
+        width: 260px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        font-weight: 400;
+        background-color: rgba(116, 140, 241, 0.8);
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+    }
+    
+    .info{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .weather-info{
+        font-size: 30px;
+        font-weight: 800;
+    }
+  }
+
+  
+  @media all and (max-width: 980px){
+    body{
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        display:inline;
+        transition: 1s smooth;
+    }
+    .left-div{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        color: black;
+    }
+    
+    #search-bar{
+        height: 48px;
+        width: 85%;
+        background-color: #ededef;
+        border: 0;
+        border-radius: 50px;
+        position: relative;
+        top: 50px;
+    }
+    
+    #search-bar::after{
+        content: url("magnifying-glass.png");
+        height: 24px;
+        width: 24px;
+    
+    }
+    
+    /* #search-icon{
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 45px;
+        left: 440px;
+    }
+     */
+    #weather-icon{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .weather-temp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .temp{
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .weather{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    hr{
+        border: 1px solid #ededef;
+        width: 60%;
+    }
+    
+    .date-time{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .right-div{
+        width: 100%;
+        display: block;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #efefef;
+    }
+    
+    .right-div > div{
+        min-height: 95px;
+        max-width: 80%;
+        display: block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 5%;
+        margin-bottom: 5%;
+        font-weight: 400;
+        background-color: rgba(116, 140, 241, 0.8);
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    .info{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .weather-info{
+        font-size: 30px;
+        font-weight: 800;
+    }
+  }
+
